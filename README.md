@@ -1,33 +1,90 @@
-# Excel Data Cleaning & Analysis Tool
+# PDF Report Generator for Student & Company Data
 
-## Features
+## Project Overview
 
-- Load Excel/CSV/JSON files
-- Remove duplicates
-- Handle missing values
-- Standardize column names
-- Analyze datasets
-- Group analysis
-- Sorting
-- Filtering
-- Searching
-- Data profiling
-- Email validation
-- Data visualization
-- PDF report generation
-- Excel formatting
-- Multiple file processing
-- GUI support
-- Logging system
+PDF Report Generator is a Python-based application designed to generate professional PDF reports for student and company data. The system supports CSV/JSON data loading, manual data entry, chart generation, password-protected PDFs, and automatic report storage.
 
-## Installation
+This project simulates real-world reporting systems used in schools, universities, and companies.
 
-pip install -r requirements.txt
+---
 
-## Run CLI Version
+# Features
 
-python main.py
+## Student Report
+- Student details
+- Course information
+- Marks
+- Attendance
+- Performance chart
 
-## Run GUI Version
+## Company Report
+- Employee details
+- Role information
+- Performance summary
 
-python gui/app_gui.py
+## Data Input Methods
+- Manual data entry
+- CSV file loading
+- JSON file loading
+
+## PDF Features
+- Professional formatting
+- Tables
+- Headings
+- Date & time
+- Logo support
+- Charts/graphs
+- Automatic file saving
+
+## Security
+- Password-protected PDFs
+
+## Error Handling
+- Missing files
+- Invalid data
+- Invalid images
+- Empty data handling
+
+## Modular Structure
+- Separate modules for:
+  - PDF generation
+  - Data loading
+  - Charts
+  - Security
+  - Utilities
+
+---
+
+# Technologies Used
+
+- Python 3.13
+- ReportLab
+- Matplotlib
+- PyPDF2
+
+---
+
+# Project Structure
+
+```text
+PDF Report Generator/
+│
+├── main.py
+├── pdf_generator.py
+├── data_loader.py
+├── charts.py
+├── security.py
+├── utils.py
+│
+├── assets/
+│   ├── logo.png
+│   └── chart.png
+│
+├── reports/
+│
+├── data/
+│   ├── students.csv
+│   ├── employees.csv
+│   └── students.json
+│
+└── README.md
